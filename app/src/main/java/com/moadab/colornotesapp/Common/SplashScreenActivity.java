@@ -38,7 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 finally {
                     if (FirebaseAuth.getInstance().getCurrentUser() != null){
                         /* Start MainActivity if User was Login in FireBase */
-                        startActivity(new Intent(SplashScreenActivity.this, OnBoardingActivity.class));
+                        startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
                         finish();
 
                     }

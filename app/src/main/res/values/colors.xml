@@ -20,6 +20,7 @@
     <color name="yellow">#FFC107</color>
     <color name="darkgreen">#27AA2B</color>
 
+    <color name="back">#F6F6F6</color>
 
     <!-- Random color for note list-->
     <color name="light_blue">#E9FCFF</color>

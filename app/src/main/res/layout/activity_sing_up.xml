@@ -4,6 +4,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SingUpActivity">
+    tools:context=".SingUpActivity"
+    android:background="@drawable/back_singup">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/singup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/arlrbbd"
+            android:text="@string/btn_singup"
+            android:textColor="@color/gray"
+            android:textSize="22sp"
+            android:padding="2dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/s_imageView"
+            android:layout_width="300dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/singup_title"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/sing_up_img" />
+
+        <EditText
+            android:id="@+id/s_personname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_edit_text"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/your_name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:textColor="@color/purple"
+            android:textSize="14sp" />
+
+        <EditText
+            android:textColor="@color/purple"
+            android:id="@+id/s_emailaddress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_personname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_edit_text"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:textColor="@color/purple"
+            android:id="@+id/s_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_emailaddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_edit_text"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/s_btn_singup"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_below="@id/s_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arlrbbd"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/back_button"
+            android:text="@string/btn_singup" />
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_marginTop="12dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/s_btn_singup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="625dp">
+
+            <TextView
+                android:id="@+id/s_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_login"
+                android:text="@string/sing_up_quize"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/s_btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question"
+                android:text="@string/btn_login"
+                android:paddingLeft="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
