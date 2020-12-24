@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ColorNotesApp">
-        <activity android:name=".AddNotesActivity"></activity>
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditNoteActivity" />
+        <activity android:name=".AddNotesActivity" />
         <activity android:name=".SingUpActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".Common.OnBoardingActivity" />

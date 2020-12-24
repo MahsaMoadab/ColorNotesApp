@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:background="@drawable/back_profile"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/arlrbbd"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/back_account"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:autofillHints="Edit Profile"
+                android:src="@drawable/ic_back_w" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/info"
+            android:layout_width="340dp"
+            android:layout_height="450dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            app:cardCornerRadius="38dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pro_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/c_circleImageView"
+                        android:layout_width="135dp"
+                        android:layout_height="135dp"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/change_pro"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/background_edit_text"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_camera"
+                        app:layout_constraintBottom_toBottomOf="@+id/c_circleImageView"
+                        app:layout_constraintEnd_toEndOf="@+id/c_circleImageView"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/c_circleImageView"
+                        app:layout_constraintTop_toTopOf="@+id/c_circleImageView"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/c_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pro_user"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_profile"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:gravity="bottom"
+                    android:padding="10sp"
+                    android:text="@string/your_name"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/c_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/c_user"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_mail_pro"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:gravity="bottom"
+                    android:padding="10sp"
+                    android:text="@string/email_address"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/c_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/c_email"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_about_app"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:gravity="bottom"
+                    android:padding="10sp"
+                    android:text="@string/your_bio"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

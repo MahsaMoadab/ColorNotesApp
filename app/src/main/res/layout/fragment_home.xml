@@ -80,14 +80,14 @@
         android:layout_height="match_parent"
         android:layout_marginTop="162dp"
         android:orientation="vertical"
-        android:background="@color/white"
+        android:background="@color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/user">
 
         <RelativeLayout
-            android:background="@color/white"
+            android:background="@color/transparent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp"
@@ -144,7 +144,7 @@
                 android:id="@+id/recyclerview_notes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/transparent"
                 android:paddingBottom="5dp"
                 tools:listitem="@layout/note_item">
 
@@ -155,7 +155,7 @@
                 android:layout_below="@id/recyclerview_notes"
                 android:layout_width="match_parent"
                 android:layout_height="83dp"
-                android:background="@color/white">
+                android:background="@color/transparent">
 
             </RelativeLayout>
 

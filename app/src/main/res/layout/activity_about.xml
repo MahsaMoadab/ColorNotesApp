@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@drawable/back_login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/arlrbbd"
+                android:gravity="center"
+                android:text="About app"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/back_accounts"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_note"
+            android:layout_below="@id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/transparent">
+
+            <RelativeLayout
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="DuplicateIds,InvalidId"
+                    android:paddingLeft="25sp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/feed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feedback"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/arlrbbd"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="3dp"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/your_feedback"
+                        android:layout_below="@id/feed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/dark_gray"
+                        android:text="Please send us your feedback"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/team"
+                    android:padding="8dp"
+                    android:layout_below="@id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25sp"
+                    android:text="Our team"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/arlrbbd"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/moadab"
+                    android:layout_below="@id/team"
+                    android:layout_width="310dp"
+                    android:layout_height="188dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginTop="20sp"
+                    android:layout_centerHorizontal="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:layout_width="238dp"
+                            android:layout_height="146dp"
+                            android:src="@drawable/moadab"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/moghise"
+                    android:layout_below="@id/moadab"
+                    android:layout_width="310dp"
+                    android:layout_height="188dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginTop="20sp"
+                    android:layout_centerHorizontal="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:layout_width="238dp"
+                            android:layout_height="146dp"
+                            android:src="@drawable/moghise"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

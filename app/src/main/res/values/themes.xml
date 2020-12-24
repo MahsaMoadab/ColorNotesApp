@@ -16,6 +16,7 @@
 
     <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@color/white</item>
     </style>
 
     <style name="TabLayout">
