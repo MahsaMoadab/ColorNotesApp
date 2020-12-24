@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "81604128981",
+    "firebase_url": "https://color-notes-app-default-rtdb.firebaseio.com",
+    "project_id": "color-notes-app",
+    "storage_bucket": "color-notes-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81604128981:android:2b79633fe806e9eb23725c",
+        "android_client_info": {
+          "package_name": "com.moadab.colornotesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81604128981-7sucn7npsskhs760br59quboivk2322a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQjZ2PO-0-4WblOu6ZN9meO7PZ4XFfoYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81604128981-7sucn7npsskhs760br59quboivk2322a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

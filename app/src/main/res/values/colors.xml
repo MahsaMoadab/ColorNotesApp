@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#683AA0</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#7E7E7E</color>
+    <color name="light_gray">#888888</color>
+    <color name="dark_gray">#404040</color>
+    <color name="e_solid">#F9F6FE</color>
+    <color name="purple">#683AA0</color>
+    <color name="light_purple">#F0E6FF</color>
+    <color name="e_purple">#C2B5D3</color>
+    <color name="yellow">#FFC107</color>
+    <color name="darkgreen">#27AA2B</color>
+
+
+    <!-- Random color for note list-->
+    <color name="light_blue">#E9FCFF</color>
+    <color name="lighte_purple">#ECE3E1</color>
+    <color name="light_green">#E6F6D3</color>
+    <color name="light_pick">#FFF1F5</color>
+    <color name="green">#ECF5DA</color>
+    <color name="pink">#FADFCC</color>
+    <color name="dark_green">#DAEAD8</color>
+    <color name="v_light_green">#F1F9D0</color>
+    <color name="light_yellow">#F8EFAA</color>
+    <color name="v_light_blue">#D7F5F5</color>
+
+    <color name="transparent">#00000000</color>
+</resources>
