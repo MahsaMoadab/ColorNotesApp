@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SingUpActivity"
-    android:background="@drawable/back_singup">
+    android:background="@drawable/back_singup"
+    android:padding="10dp">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -95,12 +96,12 @@
             android:layout_below="@id/s_password"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/arlrbbd"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="@color/white"
             android:background="@drawable/back_button"
-            android:text="@string/btn_singup" />
+            android:fontFamily="@font/arlrbbd"
+            android:text="@string/btn_singup"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/line1"

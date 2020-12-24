@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.UserFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:background="@drawable/back_profile"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:text="My Account"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/info"
+                android:layout_width="320dp"
+                android:layout_height="260dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                app:cardCornerRadius="25dp">
+
+                <RelativeLayout
+                    android:id="@+id/user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:background="@color/white">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/pro_user"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile" />
+
+
+                    <TextView
+                        android:id="@+id/user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pro_user"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/arlrbbd"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="@string/your_name"
+                        android:textColor="@color/purple"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/arlrbbd"
+                        android:gravity="center"
+                        android:padding="10sp"
+                        android:text="@string/your_bio"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info"
+                android:padding="30sp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/l_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/account"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/profiles" />
+
+                    <TextView
+                        android:id="@+id/txt_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13sp"
+                        android:fontFamily="@font/arlrbbd"
+                        android:padding="5dp"
+                        android:text="Profile"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/l_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/l_account"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/about"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/about" />
+
+                    <TextView
+                        android:id="@+id/txt_about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13sp"
+                        android:fontFamily="@font/arlrbbd"
+                        android:padding="5dp"
+                        android:text="About app"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/l_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/l_about"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:id="@+id/txt_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13sp"
+                        android:fontFamily="@font/arlrbbd"
+                        android:padding="5dp"
+                        android:text="Sing out"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

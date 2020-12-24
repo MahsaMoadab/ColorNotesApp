@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_about_app"/>
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Bio"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/change_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:background="@drawable/back_edit_note"
+                android:ems="10"
+                android:padding="14dp"
+                android:gravity="start|top"
+                android:hint="@string/your_bio"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:maxLength="80"/>
+            <LinearLayout
+                android:layout_below="@id/change_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/b_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_cansel"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/b_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_save"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:textColor="@color/purple"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

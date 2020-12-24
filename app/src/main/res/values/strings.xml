@@ -34,4 +34,6 @@
     <string name="sing_out">Sing out</string>
     <string name="no_note1">Here is no note available.</string>
     <string name="no_note2">Click on `+` to add a new note.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
