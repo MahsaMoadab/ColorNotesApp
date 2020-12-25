@@ -23,7 +23,8 @@
             app:cardCornerRadius="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:layout_alignParentRight="true">
+            android:layout_alignParentRight="true"
+            android:background="@color/white">
 
             <ImageView
                 android:id="@+id/image_profile"
