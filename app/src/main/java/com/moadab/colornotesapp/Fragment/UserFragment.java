@@ -33,6 +33,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UserFragment extends Fragment {
 
+    /* Initialize variables */
     private ImageView logout,account,about;
     private TextView userName,userBio;
     private CircleImageView userImage;
@@ -41,17 +42,13 @@ public class UserFragment extends Fragment {
     FirebaseAuth mAuth;
     TextView profileText,aboutApp,txtSingOut;
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-
         View view = inflater.inflate(R.layout.fragment_user, container, false);
 
+        /* Access to fragment elements */
         userName = view.findViewById(R.id.user);
         userBio = view.findViewById(R.id.bio);
         userImage = view.findViewById(R.id.pro_user);
@@ -69,6 +66,7 @@ public class UserFragment extends Fragment {
         txtSingOut.setOnClickListener(v -> singOutDialog.show());
         about.setOnClickListener(v -> aboutApps());
 
+        /* Show Customize sing Out  Dialog */
         singOutDialog = new Dialog(getActivity());
         singOutDialog.setContentView(R.layout.logout_dialog);
         singOutDialog.getWindow().setBackgroundDrawableResource(R.color.transparent);
@@ -85,12 +83,7 @@ public class UserFragment extends Fragment {
         aboutApp.setOnClickListener(v -> aboutApps());
 
         return view;
-
-
     }
-
-
-
 
     /* get user information in firebase */
     private void readInfoUser() {
@@ -144,6 +137,6 @@ public class UserFragment extends Fragment {
     private void aboutApps() {
         startActivity(new Intent(getActivity() , AboutActivity.class)
                 .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK));
-
     }
+
 }

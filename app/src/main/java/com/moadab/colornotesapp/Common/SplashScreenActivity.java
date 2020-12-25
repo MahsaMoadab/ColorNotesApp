@@ -14,6 +14,7 @@ import com.moadab.colornotesapp.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
+    /* Initialize variables */
     Animation appNameAnimation;
     ImageView splashTitle;
 
@@ -22,8 +23,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        splashTitle = (ImageView) findViewById(R.id.splash_title);
+        /* Access to activity elements */
+        splashTitle = findViewById(R.id.splash_title);
 
+        /* set app Name Animation */
         appNameAnimation = AnimationUtils.loadAnimation(this, R.anim.splash_animation);
         splashTitle.setAnimation(appNameAnimation);
 

@@ -16,23 +16,24 @@ import com.moadab.colornotesapp.R;
 import com.moadab.colornotesapp.SingUpActivity;
 
 public class OnBoardingActivity extends AppCompatActivity {
+
+    /* Initialize variables */
     private ViewPager viewPager;
     private Button btnNext,btnStart;
     private TabLayout tabLayout;
-
     private int sliderImage[]={R.drawable.slider_one , R.drawable.slider_two , R.drawable.slider_three};
     private int sliderTitle[]={R.string.slider_title_one , R.string.slider_title_two , R.string.slider_title_three};
     private int sliderDescription[]={R.string.slider_desc_one , R.string.slider_desc_two , R.string.slider_desc_three};
     private SliderAdapter sliderAdapter;
-
     private int position = 0;
-    Animation appNameAnimation;
+    Animation buttonAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_boarding);
 
+        /* Access to activity elements */
         viewPager = findViewById(R.id.slider);
         tabLayout = findViewById(R.id.tab_mode);
         btnNext = findViewById(R.id.btn_next);
@@ -102,8 +103,9 @@ public class OnBoardingActivity extends AppCompatActivity {
 
     private void animateViewIn() {
 
-        appNameAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_on_boarding);
-        btnStart.setAnimation(appNameAnimation);
+        /* set app Name Animation */
+        buttonAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_on_boarding);
+        btnStart.setAnimation(buttonAnimation);
         tabLayout.setVisibility(View.INVISIBLE);
         btnNext.setVisibility(View.INVISIBLE);
         btnStart.setVisibility(View.VISIBLE);

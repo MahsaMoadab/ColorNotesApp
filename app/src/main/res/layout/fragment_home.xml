@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.HomeFragment"
     android:background="@color/white">
-
-
+    
     <RelativeLayout
         android:id="@+id/user"
         android:layout_width="match_parent"
@@ -40,18 +39,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="38dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:fontFamily="@font/arlrbbd"
             android:text="@string/your_name"
             android:textColor="@color/purple"
-            android:textSize="20sp"
+            android:textSize="19sp"
             android:padding="3dp"/>
         <TextView
             android:id="@+id/user_email"
             android:layout_below="@id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="33dp"
+            android:layout_marginLeft="21dp"
             android:text="@string/email_address"
             android:fontFamily="@font/arlrbbd"
             android:textSize="14sp"

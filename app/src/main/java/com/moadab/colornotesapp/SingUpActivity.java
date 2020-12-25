@@ -50,10 +50,10 @@ public class SingUpActivity extends AppCompatActivity {
         singUp = findViewById(R.id.s_btn_singup);
         btnLogin = findViewById(R.id.s_btn_login);
 
-        /* Create Progress Dialog for sing up user*/
+        /* Create Progress Dialog */
         progressDialog = new ProgressDialog(SingUpActivity.this);
 
-        /* Access to Instance  Firebase Database*/
+        /* Access to Instance  Firebase Database */
         sRootRef = FirebaseDatabase.getInstance().getReference();
         sAuth = FirebaseAuth.getInstance();
 

@@ -83,6 +83,7 @@ public class HomeFragment extends Fragment implements NoteAdapter.OnNoteListener
     }
 
 
+    /* Method read Notes Firebase Database*/
     private void readNotes() {
 
         nRootRef = FirebaseDatabase.getInstance().getReference().child("Notes")

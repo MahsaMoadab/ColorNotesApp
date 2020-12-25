@@ -50,6 +50,7 @@ public class AddNotesActivity extends AppCompatActivity {
         noteTitle = findViewById(R.id.note_title);
         noteDesc = findViewById(R.id.note_desc);
 
+        /* Show current time in create Date */
         Utility util = new Utility();
         createDate = util.getCurrentShamsidate();
 
@@ -114,6 +115,7 @@ public class AddNotesActivity extends AppCompatActivity {
 
             HashMap<String, Object> noteMap = new HashMap<>();
 
+            /* get data and set in database */
             noteMap.put("id" , noteId);
             noteMap.put("title", txt_noteTitle);
             noteMap.put("description", txt_noteDesc);

@@ -38,6 +38,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileActivity extends AppCompatActivity {
 
+    /* Initialize variables */
     CircleImageView proImage;
     ImageView back,changeProImage;
     TextView userNameProfile,userEmailProfile,userBioProfile;
@@ -45,7 +46,6 @@ public class ProfileActivity extends AppCompatActivity {
     TextView nSave,nCancel,bSave,bCancel;
     EditText changeName,changeBio;
     public String txtName,txtBio;
-
     ProgressDialog progressDialog;
     private Uri imageUri;
     private StorageReference storageReference;
@@ -58,6 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        /* Access to activity elements */
         proImage = findViewById(R.id.c_circleImageView);
         changeProImage = findViewById(R.id.change_pro);
         back = findViewById(R.id.back_account);
@@ -70,10 +71,11 @@ public class ProfileActivity extends AppCompatActivity {
 
         back.setOnClickListener(v -> finish());
 
-
+        /* Access to Instance  Firebase Database */
         reference = FirebaseDatabase.getInstance().getReference();
         storageReference = FirebaseStorage.getInstance().getReference();
 
+        /* click on insert or change image profile in Firebase Database */
         changeProImage.setOnClickListener(v ->
                 CropImage.activity()
                         .setAspectRatio(1,1)
@@ -83,7 +85,7 @@ public class ProfileActivity extends AppCompatActivity {
         userBioProfile.setOnClickListener(v -> changeBioDialog());
 
 
-        /* Create Progress Dialog for login user*/
+        /* Create Progress Dialog*/
         progressDialog = new ProgressDialog(ProfileActivity.this);
     }
 
@@ -109,12 +111,14 @@ public class ProfileActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
 
-                /* Show Customize Progress Dioalog after click sing up */
+                /* Show Customize Progress Dioalog after click crop image */
                 progressDialog.show();
                 progressDialog.setContentView(R.layout.progress_dialog);
                 progressDialog.getWindow().setBackgroundDrawableResource(R.color.transparent);
 
                 if (imageUri != null) {
+
+                    /* insert or change image profile in Firebase Database */
                     final StorageReference filePath = storageReference.child("imageProfile")
                             .child(Objects.requireNonNull(mAuth.getCurrentUser()).getUid() + getFileExtention(imageUri));
 
@@ -143,6 +147,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+    /* Show Customize change Bio Dialog */
     private void changeBioDialog() {
 
         AlertDialog.Builder alert;
@@ -179,7 +184,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
 
-
+    /* Show Customize change Name Dialog */
     private void changeNameDialog() {
 
         AlertDialog.Builder alert;
@@ -215,7 +220,7 @@ public class ProfileActivity extends AppCompatActivity {
         nCancel.setOnClickListener(v -> dialog.dismiss());
 
     }
-
+    /* Method User change user name in FireBase */
     private void updateUserInfo(String txtName) {
 
         FirebaseDatabase.getInstance().getReference().child("Users").
@@ -235,7 +240,7 @@ public class ProfileActivity extends AppCompatActivity {
         readInfoUser();
 
     }
-
+    /* Method User change user bio in FireBase */
     private void updateUserBio(String txtBio) {
 
         FirebaseDatabase.getInstance().getReference()

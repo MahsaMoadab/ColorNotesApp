@@ -25,11 +25,11 @@ import java.util.HashMap;
 
 public class AboutActivity extends AppCompatActivity {
 
+    /* Initialize variables */
     TextView yourFeedback,cancel,send;
     EditText txtFeedbak;
     String txtfeed;
     ImageView back;
-
     ProgressDialog progressDialog;
     FirebaseAuth auth;
     DatabaseReference reference;
@@ -39,6 +39,7 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
+        /* Access to activity elements */
         yourFeedback = findViewById(R.id.your_feedback);
         back = findViewById(R.id.back_accounts);
 
@@ -54,7 +55,7 @@ public class AboutActivity extends AppCompatActivity {
         back.setOnClickListener(v -> finish());
     }
 
-
+    /* Show Customize feedback Dioalog */
     private void feedbackDialog() {
 
         AlertDialog.Builder alert;
@@ -90,9 +91,10 @@ public class AboutActivity extends AppCompatActivity {
         cancel.setOnClickListener(v -> dialog.dismiss());
     }
 
+    /* method send feedback user in database */
     private void sendFeedback(String txtfeed) {
 
-        /* Show Customize Progress Dioalog after click sing up */
+        /* Show Customize Progress Dioalog */
         progressDialog.show();
         progressDialog.setContentView(R.layout.progress_dialog);
         progressDialog.getWindow().setBackgroundDrawableResource(R.color.transparent);
