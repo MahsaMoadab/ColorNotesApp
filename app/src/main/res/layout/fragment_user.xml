@@ -36,7 +36,7 @@
                     android:layout_marginTop="18dp"
                     android:fontFamily="@font/arlrbbd"
                     android:text="My Account"
-                    android:textColor="@color/white"
+                    android:textColor="@color/purple"
                     android:textSize="22sp" />
 
             </RelativeLayout>

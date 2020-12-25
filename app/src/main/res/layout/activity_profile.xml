@@ -20,25 +20,25 @@
             android:layout_width="match_parent"
             android:layout_height="198dp"
             android:padding="14dp"
-            android:background="@color/lighte_purple">
+            android:background="@color/light_purple">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/arlrbbd"
                 android:text="Profile"
                 android:textColor="@color/black"
-                android:textSize="26sp" />
+                android:textSize="23sp" />
 
             <ImageView
                 android:id="@+id/back_account"
-                android:layout_width="32dp"
-                android:layout_height="30dp"
+                android:layout_width="28dp"
+                android:layout_height="25dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="10dp"
                 android:autofillHints="Edit Profile"
                 android:src="@drawable/ic_back" />
 
@@ -47,9 +47,9 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/info"
             android:layout_width="335dp"
-            android:layout_height="550dp"
+            android:layout_height="500dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="70dp"
             app:cardCornerRadius="38dp">
 
             <RelativeLayout
